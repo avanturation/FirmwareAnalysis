@@ -22,7 +22,7 @@ class Parser:
                     return plistlib.loads(data)
 
                 logger.error(
-                    f"IPSW Server returned status code {resp.status}. Failed to get data."
+                    f"iTunes server returned status code {resp.status}. Failed to get data."
                 )
 
     @staticmethod
@@ -35,7 +35,7 @@ class Parser:
                     return plistlib.loads(data)
 
                 logger.error(
-                    f"iBridgeOS Server returned status code {resp.status}. Failed to get data."
+                    f"iBridgeOS server returned status code {resp.status}. Failed to get data."
                 )
 
     @staticmethod
@@ -48,5 +48,5 @@ class Parser:
                     return plistlib.loads(data)
 
                 logger.error(
-                    f"macOS Update Server returned status code {resp.status}. Failed to get data."
+                    f"macOS update server returned status code {resp.status}. Failed to get data."
                 )
