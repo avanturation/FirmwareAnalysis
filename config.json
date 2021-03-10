@@ -25,22 +25,5 @@
             "isota": false,
             "type": "T2"
         }
-    ],
-    "samsung": [
-        {
-            "model": "SM-A520L",
-            "region": "LUC",
-            "isota": false
-        },
-        {
-            "model": "SM-G930S",
-            "region": "SKC",
-            "isota": false
-        },
-        {
-            "model": "SM-R180",
-            "region": null,
-            "isota": true
-        }
     ]
 }
