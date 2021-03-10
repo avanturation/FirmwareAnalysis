@@ -1,0 +1,46 @@
+{
+    "apple": [
+        {
+            "identifier": "iPhone12,1",
+            "isota": false,
+            "type": "iPhone"
+        },
+        {
+            "identifier": "iPhone7,2",
+            "isota": false,
+            "type": "iPhone"
+        },
+        {
+            "identifier": "iPod7,1",
+            "isota": false,
+            "type": "iPod"
+        },
+        {
+            "identifier": "Macmini9,1",
+            "isota": false,
+            "type": "Mac"
+        },
+        {
+            "identifier": "iBridge2,3",
+            "isota": false,
+            "type": "T2"
+        }
+    ],
+    "samsung": [
+        {
+            "model": "SM-A520L",
+            "region": "LUC",
+            "isota": false
+        },
+        {
+            "model": "SM-G930S",
+            "region": "SKC",
+            "isota": false
+        },
+        {
+            "model": "SM-R180",
+            "region": null,
+            "isota": true
+        }
+    ]
+}
