@@ -14,7 +14,7 @@ async def run():
     for device in config:
         logger.info(f"Loaded device : {device['identifier']}")
 
-    main = AppleFirmware(config["apple"])
+    main = AppleFirmware(config)
     await main.start()
 
 

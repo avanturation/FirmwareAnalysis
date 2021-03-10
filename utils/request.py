@@ -19,7 +19,7 @@ class Parser:
                 if resp.status == 200:
                     logger.info("Successfully got result from iTunes server.")
                     data = await resp.text(encoding="utf-8")
-                    return plistlib.loads(data)
+                    return plistlib.loads(bytes(data, encoding="utf-8"))
 
                 logger.error(
                     f"iTunes server returned status code {resp.status}. Failed to get data."
@@ -32,7 +32,7 @@ class Parser:
                 if resp.status == 200:
                     logger.info("Successfully got result from iBridgeOS server.")
                     data = await resp.text(encoding="utf-8")
-                    return plistlib.loads(data)
+                    return plistlib.loads(bytes(data, encoding="utf-8"))
 
                 logger.error(
                     f"iBridgeOS server returned status code {resp.status}. Failed to get data."
@@ -45,7 +45,7 @@ class Parser:
                 if resp.status == 200:
                     logger.info("Successfully got result from macOS update server.")
                     data = await resp.text(encoding="utf-8")
-                    return plistlib.loads(data)
+                    return plistlib.loads(bytes(data, encoding="utf-8"))
 
                 logger.error(
                     f"macOS update server returned status code {resp.status}. Failed to get data."

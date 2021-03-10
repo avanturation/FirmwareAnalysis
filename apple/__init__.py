@@ -2,6 +2,8 @@ import os
 from typing import List
 from ..utils.request import Parser
 from ..utils.logger import getlogger
+from ..utils.downloader import download_ipsw
+from ..utils.parser import parse_plist
 
 
 class AppleFirmware:
@@ -27,6 +29,8 @@ class AppleFirmware:
 
     async def download(self, device: str):
         self.logger.info(f"Searching firmwares for {device}")
-        firmware_list = self.plist_data["MobileDeviceSoftwareVersionsByVersion"]
-
-        # 대충 찾고 download
+        firmware_url = await parse_plist(
+            self.plist_data["MobileDeviceSoftwareVersionsByVersion"], identifier=device
+        )
+        self.logger.info(f"Start downloading firmware for {device}")
+        await download_ipsw(firmware_url)

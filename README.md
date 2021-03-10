@@ -3,13 +3,11 @@ The Analysis of Apple internal firmware servers
 
 ## Description
 
-A tool that can download iPhone, iPod, iPad, Apple TV, Mac (Apple Silicon), and T2 Chip.
+A tool that can download iPhone, iPod, iPad, Apple TV (partially), Mac (Apple Silicon), HomePod mini, and T2 Chip.
 
 ** THIS TOOL CAN NOT DOWNLOAD INTEL-BASED MAC FIRMWARES **
 
-(maybe HomePods either)
-
-Apple Watch and AirPods are not available due to Apple's complicated OTA servers.
+Apple Watch, AirPods, Some Apple TVs, and HomePods are not available due to Apple's complicated OTA servers.
 
 ## how did u analyzed it?????
 
