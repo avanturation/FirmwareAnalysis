@@ -5,13 +5,13 @@ The Analysis of Apple internal firmware servers
 
 A tool that can download iPhone, iPod, iPad, Apple TV (partially), Mac (Apple Silicon), HomePod mini, and T2 Chip.
 
-** THIS TOOL CAN NOT DOWNLOAD INTEL-BASED MAC FIRMWARES **
+Basically, grabs the latest IPSW file from Apple's asset servers.
 
-Apple Watch, AirPods, Some Apple TVs, and HomePods are not available due to Apple's complicated OTA servers.
+Apple Watch, AirPods, Some Apple TVs, and HomePods are not available because they only support OTA payloads.
 
-## how did u analyzed it?????
+## The Way How I analyzed it (Korean)
 
-[Listening to C JAMM's music, and f**king around.](https://www.notion.so/Apple-5155739356004e66967a93309df6757b)
+https://www.notion.so/Apple-5155739356004e66967a93309df6757b
 
 ## How to use
 
